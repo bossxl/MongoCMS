@@ -2,26 +2,24 @@
 /*
 * This Class is inherited by all other db objects.
 * Any universal or general functionality should go through this object
+* All database objects HAVE TO BE DECLARED IN THIS FILE!
 *
 */
+
 class superdbobject{
-	public name = '';
-	public description = '';
-	public function __construct(){
+	public $id = ''
+	public $name = '';
+	public $description = '';
+	public function __construct($defaults=null){
+		if($defaults != null){
+			foreach ($defaults as $key => $value) {
+				$this->$key = $value;
+			}
+		}
 		// Nothing is needed in the basic construction
 	}
-	public function getName(){
-		return $this->name;
-	}
-	public function setName($name){
-		$this->name = $name;
-	}
-	public function getDescription(){
-		return $this->description;
-	}
-	public function setDescription($description){
-		$this->description = $description;
-	}
 }
-
+require_once "media.php";
+require_once "user.php";
+require_once "pages.php";
 ?>

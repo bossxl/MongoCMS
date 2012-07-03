@@ -2,13 +2,13 @@
 if(isset($_GET["page"])){
 	switch ($_GET["page"]):
 		case "admin":
-			echo "display admin page";
+			$_SESSION['page'] = 'admin';
 		break;
 		case "login":
-			echo "display login page";
+			$_SESSION['page'] = 'login';
 		break;
 		default:
-			echo "display 404";
+			$_SESSION['page'] = '404';
 	endswitch;
 } elseif (isset($_GET["id"])){
 	echo "get the page with this id";

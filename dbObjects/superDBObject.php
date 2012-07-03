@@ -7,7 +7,7 @@
 */
 
 class superdbobject{
-	public $id = ''
+	public $id = '';
 	public $name = '';
 	public $description = '';
 	public function __construct($defaults=null){
@@ -19,7 +19,7 @@ class superdbobject{
 		// Nothing is needed in the basic construction
 	}
 }
-require_once "media.php";
-require_once "user.php";
-require_once "pages.php";
+//require_once "media.php";
+require_once "users.php";
+//require_once "pages.php";
 ?>

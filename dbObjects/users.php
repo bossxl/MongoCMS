@@ -4,6 +4,7 @@ class user extends superdbobject {
 	public $firstName = '';
 	public $lastName = '';
 	public $bio = '';
+	//index of the array $types, default is a public user type. 
 	private $type = 3;
 	private $types = array("super-admin", "admin", "editor", "public");
 	public function setPassword ($password){

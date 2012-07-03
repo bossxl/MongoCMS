@@ -1,5 +1,6 @@
 <?php
-class user extends superdbobject {
+class usersObject extends superdbobject {
+	
 	private $password = '';
 	public $firstName = '';
 	public $lastName = '';

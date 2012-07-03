@@ -20,6 +20,6 @@ class superdbobject{
 	}
 }
 //require_once "media.php";
-require_once "users.php";
-//require_once "pages.php";
+require_once "usersObject.php";
+require_once "pagesObject.php";
 ?>

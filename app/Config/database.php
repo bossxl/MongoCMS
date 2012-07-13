@@ -84,10 +84,12 @@ class DATABASE_CONFIG {
 	//Lets use Mongo Instead
 
 	public $default = array(
-        'driver' => 'mongodb.mongodbSource',
-        'database' => 'driver',
+        'datasource' => 'Mongodb.MongodbSource',
         'host' => 'localhost',
+        'database' => 'local',
         'port' => 27017,
+        'prefix' => '',
+        'persistent' => 'true',
         /* optional auth fields
         'login' => 'mongo', 
         'password' => 'awesomeness',
@@ -95,5 +97,5 @@ class DATABASE_CONFIG {
                               'options' => array('replicaSet' => 'myRepl')
                      ),
         */
-    );  
+    );
 }
